@@ -1804,6 +1804,7 @@ BRUTEFORCE_TESTS = {
         "get_account_settings",
         "get_resources_summary",
         "list_components",
+        "list_deployments",
         "list_environment_templates",
         "list_environments",
         "list_repositories",
