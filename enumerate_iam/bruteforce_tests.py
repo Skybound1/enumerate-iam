@@ -1075,6 +1075,7 @@ BRUTEFORCE_TESTS = {
         "list_workflows"
     ],
     "grafana": [
+        "list_versions",
         "list_workspaces"
     ],
     "greengrass": [
@@ -1470,6 +1471,7 @@ BRUTEFORCE_TESTS = {
         "list_projects"
     ],
     "m2": [
+        "get_signed_bluinsights_url",
         "list_applications",
         "list_engine_versions",
         "list_environments"
@@ -1569,6 +1571,9 @@ BRUTEFORCE_TESTS = {
         "list_channels",
         "list_playback_configurations",
         "list_source_locations"
+    ],
+    "medical-imaging": [
+        "list_datastores"
     ],
     "memory-db": [
         "describe_ac_ls",
@@ -2060,6 +2065,7 @@ BRUTEFORCE_TESTS = {
         "list_firewall_domain_lists",
         "list_firewall_rule_group_associations",
         "list_firewall_rule_groups",
+        "list_outpost_resolvers",
         "list_resolver_configs",
         "list_resolver_dnssec_configs",
         "list_resolver_endpoints",
@@ -2126,6 +2132,7 @@ BRUTEFORCE_TESTS = {
         "list_pipelines",
         "list_processing_jobs",
         "list_projects",
+        "list_resource_catalogs",
         "list_spaces",
         "list_studio_lifecycle_configs",
         "list_subscribed_workteams",
@@ -2277,7 +2284,8 @@ BRUTEFORCE_TESTS = {
         "list_clusters",
         "list_compatible_images",
         "list_jobs",
-        "list_long_term_pricing"
+        "list_long_term_pricing",
+        "list_pickup_locations"
     ],
     "sns": [
         "get_sms_attributes",
