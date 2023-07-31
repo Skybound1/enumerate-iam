@@ -893,6 +893,10 @@ BRUTEFORCE_TESTS = {
     "emr-serverless": [
         "list_applications"
     ],
+    "entityresolution": [
+        "list_matching_workflows",
+        "list_schema_mappings"
+    ],
     "es": [
         "describe_inbound_cross_cluster_search_connections",
         "describe_outbound_cross_cluster_search_connections",
@@ -1517,6 +1521,9 @@ BRUTEFORCE_TESTS = {
         "list_accessors",
         "list_invitations",
         "list_networks"
+    ],
+    "managedblockchain-query": [
+        "batch_get_token_balance"
     ],
     "media-pipelines-chime": [
         "list_media_capture_pipelines",
