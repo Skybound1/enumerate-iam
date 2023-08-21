@@ -2,7 +2,7 @@ name: Updates API calls
 
 on:
   schedule:
-    - cron: '7 3 1 * *'
+    - cron: '7 3 * * 1'
 
 jobs:
   update_api_calls:
