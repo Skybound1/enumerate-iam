@@ -426,6 +426,7 @@ BRUTEFORCE_TESTS = {
         "get_enrollment_status",
         "get_enrollment_statuses_for_organization",
         "get_lambda_function_recommendations",
+        "get_license_recommendations",
         "get_recommendation_summaries"
     ],
     "config": [
@@ -868,6 +869,7 @@ BRUTEFORCE_TESTS = {
         "list_deliverability_test_reports",
         "list_email_identities",
         "list_email_templates",
+        "list_export_jobs",
         "list_import_jobs",
         "list_recommendations",
         "list_suppressed_destinations",
@@ -1116,6 +1118,7 @@ BRUTEFORCE_TESTS = {
         "list_organization_admin_accounts"
     ],
     "health": [
+        "describe_affected_entities_for_organization",
         "describe_entity_aggregates",
         "describe_event_types",
         "describe_events_for_organization",
@@ -1678,6 +1681,22 @@ BRUTEFORCE_TESTS = {
         "list_reviewable_hi_ts",
         "list_worker_blocks"
     ],
+    "neptune-db": [
+        "get_engine_status",
+        "get_propertygraph_statistics",
+        "get_propertygraph_stream",
+        "get_propertygraph_summary",
+        "get_rdf_graph_summary",
+        "get_sparql_statistics",
+        "get_sparql_stream",
+        "list_gremlin_queries",
+        "list_loader_jobs",
+        "list_ml_data_processing_jobs",
+        "list_ml_endpoints",
+        "list_ml_model_training_jobs",
+        "list_ml_model_transform_jobs",
+        "list_open_cypher_queries"
+    ],
     "network-firewall": [
         "describe_firewall",
         "describe_firewall_policy",
@@ -1768,6 +1787,10 @@ BRUTEFORCE_TESTS = {
         "list_nodes",
         "list_package_import_jobs",
         "list_packages"
+    ],
+    "pca-connector-ad": [
+        "list_connectors",
+        "list_directory_registrations"
     ],
     "personalize": [
         "list_batch_inference_jobs",
