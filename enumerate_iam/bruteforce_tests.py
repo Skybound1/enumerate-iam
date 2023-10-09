@@ -186,7 +186,8 @@ BRUTEFORCE_TESTS = {
         "get_model_invocation_logging_configuration",
         "list_custom_models",
         "list_foundation_models",
-        "list_model_customization_jobs"
+        "list_model_customization_jobs",
+        "list_provisioned_model_throughputs"
     ],
     "billingconductor": [
         "list_account_associations",
@@ -508,6 +509,9 @@ BRUTEFORCE_TESTS = {
         "list_storage_systems",
         "list_task_executions",
         "list_tasks"
+    ],
+    "datazone": [
+        "list_domains"
     ],
     "dax": [
         "describe_clusters",
@@ -1628,6 +1632,7 @@ BRUTEFORCE_TESTS = {
         "describe_source_servers",
         "describe_vcenter_clients",
         "list_applications",
+        "list_connectors",
         "list_exports",
         "list_imports",
         "list_managed_accounts",
@@ -2542,6 +2547,7 @@ BRUTEFORCE_TESTS = {
         "list_notifications",
         "list_profile_notifications",
         "list_profiles",
+        "list_review_templates",
         "list_share_invitations",
         "list_workloads"
     ],
