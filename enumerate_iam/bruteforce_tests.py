@@ -2445,6 +2445,10 @@ BRUTEFORCE_TESTS = {
         "get_resources",
         "get_tag_keys"
     ],
+    "textract": [
+        "list_adapter_versions",
+        "list_adapters"
+    ],
     "tnb": [
         "list_sol_function_instances",
         "list_sol_function_packages",
