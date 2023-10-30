@@ -1,6 +1,8 @@
 import re
 import os
 import json
+import boto3
+import botocore
 
 OUTPUT_FMT = "BRUTEFORCE_TESTS = %s"
 OUTPUT_FILE = "bruteforce_tests.py"
@@ -111,7 +113,15 @@ def main():
             print("%s does not define a service name" % filename)
             continue
 
+        try:
+            client = boto3.client(service_name)
+        except botocore.exceptions.UnknownServiceError:
+            print("%s not found in boto3" % service_name)
+            continue
+
         operations = extract_operations(api_json)
+
+        operations = [x for x in operations if hasattr(client, x)]
 
         if not operations:
             continue
