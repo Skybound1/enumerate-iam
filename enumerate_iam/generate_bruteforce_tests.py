@@ -114,7 +114,7 @@ def main():
             continue
 
         try:
-            client = boto3.client(service_name)
+            client = boto3.client(service_name, region_name="us-east-1")
         except botocore.exceptions.UnknownServiceError:
             print("%s not found in boto3" % service_name)
             continue
