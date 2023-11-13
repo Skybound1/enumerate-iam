@@ -1,22 +1,4 @@
 BRUTEFORCE_TESTS = {
-    "a4b": [
-        "get_conference_preference",
-        "get_device",
-        "get_invitation_configuration",
-        "get_profile",
-        "get_room",
-        "get_skill_group",
-        "list_business_report_schedules",
-        "list_conference_providers",
-        "list_gateway_groups",
-        "list_gateways",
-        "list_skills",
-        "list_skills_store_categories"
-    ],
-    "access-analyzer": [
-        "list_analyzers",
-        "list_policy_generations"
-    ],
     "account": [
         "get_contact_information",
         "list_regions"
@@ -25,25 +7,13 @@ BRUTEFORCE_TESTS = {
         "get_account_configuration",
         "list_certificates"
     ],
-    "airflow": [
-        "list_environments"
-    ],
     "amplify": [
         "list_apps"
     ],
     "amplifybackend": [
         "list_s3_buckets"
     ],
-    "aoss": [
-        "batch_get_collection",
-        "get_account_settings",
-        "get_policies_stats",
-        "list_collections",
-        "list_vpc_endpoints"
-    ],
     "apigateway": [
-        "get_domain_names",
-        "get_vpc_links",
         "get_account",
         "get_api_keys",
         "get_client_certificates",
@@ -51,12 +21,9 @@ BRUTEFORCE_TESTS = {
         "get_rest_apis",
         "get_sdk_types",
         "get_usage_plans",
+        "get_vpc_links",
+        "get_domain_names",
         "get_vpc_links"
-    ],
-    "app-integrations": [
-        "list_applications",
-        "list_data_integrations",
-        "list_event_integrations"
     ],
     "appconfig": [
         "list_applications",
@@ -74,14 +41,6 @@ BRUTEFORCE_TESTS = {
         "list_connectors",
         "list_flows"
     ],
-    "application-cost-profiler": [
-        "list_report_definitions"
-    ],
-    "applicationinsights": [
-        "list_applications",
-        "list_configuration_history",
-        "list_problems"
-    ],
     "appmesh": [
         "list_meshes",
         "list_meshes"
@@ -94,24 +53,9 @@ BRUTEFORCE_TESTS = {
         "list_vpc_connectors",
         "list_vpc_ingress_connections"
     ],
-    "appstream2": [
-        "describe_app_block_builder_app_block_associations",
-        "describe_app_block_builders",
-        "describe_app_blocks",
-        "describe_application_fleet_associations",
-        "describe_directory_configs",
-        "describe_fleets",
-        "describe_image_builders",
-        "describe_images",
-        "describe_usage_report_subscriptions",
-        "describe_user_stack_associations"
-    ],
     "appsync": [
         "list_domain_names",
         "list_graphql_apis"
-    ],
-    "aps": [
-        "list_workspaces"
     ],
     "arc-zonal-shift": [
         "list_managed_resources",
@@ -197,12 +141,6 @@ BRUTEFORCE_TESTS = {
         "list_pricing_plans",
         "list_pricing_rules"
     ],
-    "cases": [
-        "list_domains"
-    ],
-    "cassandra": [
-        "list_keyspaces"
-    ],
     "ce": [
         "get_anomaly_monitors",
         "get_anomaly_subscriptions",
@@ -236,9 +174,6 @@ BRUTEFORCE_TESTS = {
         "describe_environment_memberships",
         "list_environments"
     ],
-    "cloudcontrolapi": [
-        "list_resource_requests"
-    ],
     "clouddirectory": [
         "list_development_schema_arns",
         "list_directories",
@@ -265,6 +200,24 @@ BRUTEFORCE_TESTS = {
         "list_types"
     ],
     "cloudfront": [
+        "list_cloud_front_origin_access_identities",
+        "list_distributions",
+        "list_field_level_encryption_configs",
+        "list_field_level_encryption_profiles",
+        "list_streaming_distributions",
+        "list_cloud_front_origin_access_identities",
+        "list_distributions",
+        "list_field_level_encryption_configs",
+        "list_field_level_encryption_profiles",
+        "list_streaming_distributions",
+        "list_cloud_front_origin_access_identities",
+        "list_distributions",
+        "list_field_level_encryption_configs",
+        "list_field_level_encryption_profiles",
+        "list_streaming_distributions",
+        "list_cloud_front_origin_access_identities",
+        "list_distributions",
+        "list_streaming_distributions",
         "get_realtime_log_config",
         "list_cache_policies",
         "list_cloud_front_origin_access_identities",
@@ -282,24 +235,6 @@ BRUTEFORCE_TESTS = {
         "list_streaming_distributions",
         "list_cloud_front_origin_access_identities",
         "list_distributions",
-        "list_streaming_distributions",
-        "list_cloud_front_origin_access_identities",
-        "list_distributions",
-        "list_field_level_encryption_configs",
-        "list_field_level_encryption_profiles",
-        "list_streaming_distributions",
-        "list_cloud_front_origin_access_identities",
-        "list_distributions",
-        "list_streaming_distributions",
-        "list_cloud_front_origin_access_identities",
-        "list_distributions",
-        "list_field_level_encryption_configs",
-        "list_field_level_encryption_profiles",
-        "list_streaming_distributions",
-        "list_cloud_front_origin_access_identities",
-        "list_distributions",
-        "list_field_level_encryption_configs",
-        "list_field_level_encryption_profiles",
         "list_streaming_distributions",
         "list_cloud_front_origin_access_identities",
         "list_distributions",
@@ -327,6 +262,7 @@ BRUTEFORCE_TESTS = {
     "cloudtrail": [
         "describe_query",
         "describe_trails",
+        "get_insight_selectors",
         "list_channels",
         "list_event_data_stores",
         "list_imports",
@@ -367,10 +303,6 @@ BRUTEFORCE_TESTS = {
         "list_deployments",
         "list_git_hub_account_token_names",
         "list_on_premises_instances"
-    ],
-    "codeguru-profiler": [
-        "get_findings_report_account_summary",
-        "list_profiling_groups"
     ],
     "codeguru-reviewer": [
         "list_repository_associations"
@@ -470,21 +402,8 @@ BRUTEFORCE_TESTS = {
         "list_phone_numbers_v2",
         "list_traffic_distribution_groups"
     ],
-    "connect-campaigns": [
-        "list_campaigns"
-    ],
-    "controlplane.payment-cryptography": [
-        "list_aliases",
-        "list_keys"
-    ],
     "cur": [
         "describe_report_definitions"
-    ],
-    "data-ats.iot": [
-        "list_retained_messages"
-    ],
-    "data.mediastore": [
-        "list_items"
     ],
     "databrew": [
         "list_datasets",
@@ -537,9 +456,6 @@ BRUTEFORCE_TESTS = {
         "list_projects",
         "list_test_grid_projects",
         "list_vpce_configurations"
-    ],
-    "devices.iot1click": [
-        "list_devices"
     ],
     "devops-guru": [
         "describe_account_health",
@@ -771,6 +687,7 @@ BRUTEFORCE_TESTS = {
         "get_ebs_encryption_by_default",
         "get_image_block_public_access_state",
         "get_serial_console_access_status",
+        "get_snapshot_block_public_access_state",
         "get_vpn_connection_device_types",
         "list_images_in_recycle_bin",
         "list_snapshots_in_recycle_bin"
@@ -802,7 +719,8 @@ BRUTEFORCE_TESTS = {
     ],
     "eks": [
         "describe_addon_versions",
-        "list_clusters"
+        "list_clusters",
+        "list_eks_anywhere_subscriptions"
     ],
     "elastic-inference": [
         "describe_accelerator_types",
@@ -836,73 +754,9 @@ BRUTEFORCE_TESTS = {
         "describe_platform_version",
         "list_platform_branches"
     ],
-    "elasticfilesystem": [
-        "describe_access_points",
-        "describe_account_preferences",
-        "describe_file_systems",
-        "describe_mount_targets",
-        "describe_replication_configurations"
-    ],
-    "elasticloadbalancing": [
-        "describe_account_limits",
-        "describe_load_balancer_policies",
-        "describe_load_balancer_policy_types",
-        "describe_load_balancers",
-        "describe_account_limits",
-        "describe_listeners",
-        "describe_load_balancers",
-        "describe_rules",
-        "describe_ssl_policies",
-        "describe_target_groups"
-    ],
-    "elasticmapreduce": [
-        "describe_job_flows",
-        "describe_release_label",
-        "get_block_public_access_configuration",
-        "list_clusters",
-        "list_notebook_executions",
-        "list_release_labels",
-        "list_security_configurations",
-        "list_studio_session_mappings",
-        "list_studios"
-    ],
     "elastictranscoder": [
         "list_pipelines",
         "list_presets"
-    ],
-    "email": [
-        "get_account",
-        "get_dedicated_ips",
-        "get_deliverability_dashboard_options",
-        "list_configuration_sets",
-        "list_dedicated_ip_pools",
-        "list_deliverability_test_reports",
-        "list_email_identities",
-        "describe_active_receipt_rule_set",
-        "get_account_sending_enabled",
-        "get_send_quota",
-        "get_send_statistics",
-        "list_configuration_sets",
-        "list_custom_verification_email_templates",
-        "list_identities",
-        "list_receipt_filters",
-        "list_receipt_rule_sets",
-        "list_templates",
-        "list_verified_email_addresses",
-        "get_account",
-        "get_dedicated_ips",
-        "get_deliverability_dashboard_options",
-        "list_configuration_sets",
-        "list_contact_lists",
-        "list_custom_verification_email_templates",
-        "list_dedicated_ip_pools",
-        "list_deliverability_test_reports",
-        "list_email_identities",
-        "list_email_templates",
-        "list_export_jobs",
-        "list_import_jobs",
-        "list_recommendations",
-        "list_suppressed_destinations"
     ],
     "emr-containers": [
         "list_job_templates",
@@ -918,15 +772,6 @@ BRUTEFORCE_TESTS = {
         "list_schema_mappings"
     ],
     "es": [
-        "describe_inbound_connections",
-        "describe_outbound_connections",
-        "describe_packages",
-        "describe_reserved_instance_offerings",
-        "describe_reserved_instances",
-        "get_compatible_versions",
-        "list_domain_names",
-        "list_versions",
-        "list_vpc_endpoints",
         "describe_inbound_cross_cluster_search_connections",
         "describe_outbound_cross_cluster_search_connections",
         "describe_packages",
@@ -935,6 +780,9 @@ BRUTEFORCE_TESTS = {
         "get_compatible_elasticsearch_versions",
         "list_domain_names",
         "list_elasticsearch_versions",
+        "list_vpc_endpoints",
+        "describe_packages",
+        "list_domain_names",
         "list_vpc_endpoints"
     ],
     "events": [
@@ -962,10 +810,6 @@ BRUTEFORCE_TESTS = {
         "list_environments",
         "list_kx_environments"
     ],
-    "finspace-api": [
-        "get_working_location",
-        "list_datasets"
-    ],
     "firehose": [
         "list_delivery_streams"
     ],
@@ -974,9 +818,6 @@ BRUTEFORCE_TESTS = {
         "list_experiment_templates",
         "list_experiments",
         "list_target_resource_types"
-    ],
-    "fleethub.iot": [
-        "list_applications"
     ],
     "fms": [
         "get_admin_account",
@@ -1048,17 +889,11 @@ BRUTEFORCE_TESTS = {
         "list_locations",
         "list_scripts"
     ],
-    "geo": [
-        "list_geofence_collections",
-        "list_keys",
-        "list_maps",
-        "list_place_indexes",
-        "list_route_calculators",
-        "list_trackers"
-    ],
     "globalaccelerator": [
         "list_accelerators",
         "list_byoip_cidrs",
+        "list_cross_account_attachments",
+        "list_cross_account_resource_accounts",
         "list_custom_routing_accelerators"
     ],
     "glue": [
@@ -1100,6 +935,8 @@ BRUTEFORCE_TESTS = {
     ],
     "greengrass": [
         "get_service_role_for_account",
+        "list_deployments",
+        "get_service_role_for_account",
         "list_bulk_deployments",
         "list_connector_definitions",
         "list_core_definitions",
@@ -1108,11 +945,7 @@ BRUTEFORCE_TESTS = {
         "list_groups",
         "list_logger_definitions",
         "list_resource_definitions",
-        "list_subscription_definitions",
-        "get_service_role_for_account",
-        "list_components",
-        "list_core_devices",
-        "list_deployments"
+        "list_subscription_definitions"
     ],
     "groundstation": [
         "list_configs",
@@ -1159,9 +992,6 @@ BRUTEFORCE_TESTS = {
         "list_users",
         "list_virtual_mfa_devices"
     ],
-    "identity-chime": [
-        "list_app_instances"
-    ],
     "imagebuilder": [
         "list_components",
         "list_container_recipes",
@@ -1175,12 +1005,6 @@ BRUTEFORCE_TESTS = {
     ],
     "importexport": [
         "list_jobs"
-    ],
-    "ingest.timestream": [
-        "describe_endpoints",
-        "list_batch_load_tasks",
-        "list_databases",
-        "list_tables"
     ],
     "inspector": [
         "describe_cross_account_access_role",
@@ -1286,9 +1110,6 @@ BRUTEFORCE_TESTS = {
         "list_signal_catalogs",
         "list_vehicles"
     ],
-    "iotroborunner": [
-        "list_sites"
-    ],
     "iotsitewise": [
         "describe_default_encryption_configuration",
         "describe_logging_options",
@@ -1340,9 +1161,6 @@ BRUTEFORCE_TESTS = {
         "list_logging_configurations",
         "list_rooms"
     ],
-    "ivsrealtime": [
-        "list_stages"
-    ],
     "kafka": [
         "get_compatible_kafka_versions",
         "list_clusters",
@@ -1377,8 +1195,6 @@ BRUTEFORCE_TESTS = {
         "list_applications"
     ],
     "kinesisvideo": [
-        "get_dash_streaming_session_url",
-        "list_fragments",
         "describe_edge_configuration",
         "describe_image_generation_configuration",
         "describe_mapped_resource_configuration",
@@ -1405,12 +1221,12 @@ BRUTEFORCE_TESTS = {
         "list_transactions"
     ],
     "lambda": [
-        "list_functions",
         "get_account_settings",
         "list_code_signing_configs",
         "list_event_source_mappings",
         "list_functions",
-        "list_layers"
+        "list_layers",
+        "list_functions"
     ],
     "license-manager": [
         "get_service_settings",
@@ -1468,6 +1284,9 @@ BRUTEFORCE_TESTS = {
         "get_static_ips"
     ],
     "logs": [
+        "describe_deliveries",
+        "describe_delivery_destinations",
+        "describe_delivery_sources",
         "describe_destinations",
         "describe_export_tasks",
         "describe_log_groups",
@@ -1546,12 +1365,6 @@ BRUTEFORCE_TESTS = {
     "managedblockchain-query": [
         "batch_get_token_balance"
     ],
-    "media-pipelines-chime": [
-        "list_media_capture_pipelines",
-        "list_media_insights_pipeline_configurations",
-        "list_media_pipeline_kinesis_video_stream_pools",
-        "list_media_pipelines"
-    ],
     "mediaconnect": [
         "list_bridges",
         "list_entitlements",
@@ -1604,21 +1417,6 @@ BRUTEFORCE_TESTS = {
     "medical-imaging": [
         "list_datastores"
     ],
-    "memory-db": [
-        "describe_ac_ls",
-        "describe_clusters",
-        "describe_engine_versions",
-        "describe_parameter_groups",
-        "describe_reserved_nodes",
-        "describe_reserved_nodes_offerings",
-        "describe_service_updates",
-        "describe_snapshots",
-        "describe_subnet_groups",
-        "describe_users"
-    ],
-    "messaging-chime": [
-        "get_messaging_session_endpoint"
-    ],
     "mgh": [
         "list_application_states",
         "list_migration_tasks",
@@ -1641,78 +1439,15 @@ BRUTEFORCE_TESTS = {
         "describe_home_region_controls",
         "get_home_region"
     ],
-    "migrationhub-orchestrator": [
-        "list_plugins",
-        "list_templates",
-        "list_workflows"
-    ],
-    "migrationhub-strategy": [
-        "get_latest_assessment_id",
-        "get_portfolio_preferences",
-        "get_portfolio_summary",
-        "list_analyzable_servers",
-        "list_application_components",
-        "list_collectors",
-        "list_import_file_task",
-        "list_servers"
-    ],
     "mobile": [
         "list_bundles",
         "list_projects"
-    ],
-    "models-v2-lex": [
-        "list_bots",
-        "list_exports",
-        "list_imports",
-        "list_test_executions",
-        "list_test_sets"
-    ],
-    "models.lex": [
-        "get_bots",
-        "get_builtin_intents",
-        "get_builtin_slot_types",
-        "get_intents",
-        "get_migrations",
-        "get_slot_types"
-    ],
-    "monitoring": [
-        "describe_alarm_history",
-        "describe_alarms",
-        "describe_anomaly_detectors",
-        "describe_insight_rules",
-        "list_dashboards",
-        "list_metric_streams",
-        "list_metrics"
     ],
     "mq": [
         "describe_broker_engine_types",
         "describe_broker_instance_options",
         "list_brokers",
         "list_configurations"
-    ],
-    "mturk-requester": [
-        "get_account_balance",
-        "list_bonus_payments",
-        "list_hi_ts",
-        "list_qualification_requests",
-        "list_reviewable_hi_ts",
-        "list_worker_blocks"
-    ],
-    "neptune-db": [
-        "get_engine_status",
-        "get_propertygraph_statistics",
-        "get_propertygraph_stream",
-        "get_propertygraph_summary",
-        "get_rdf_graph_summary",
-        "get_sparql_statistics",
-        "get_sparql_stream",
-        "list_gremlin_queries",
-        "list_loader_jobs",
-        "list_ml_data_processing_jobs",
-        "list_ml_endpoints",
-        "list_ml_model_training_jobs",
-        "list_ml_model_transform_jobs",
-        "list_open_cypher_queries"
     ],
     "network-firewall": [
         "describe_firewall",
@@ -1769,11 +1504,6 @@ BRUTEFORCE_TESTS = {
         "describe_raid_arrays",
         "describe_user_profiles",
         "describe_volumes"
-    ],
-    "opworks": [
-        "describe_account_attributes",
-        "describe_backups",
-        "describe_servers"
     ],
     "organizations": [
         "describe_organization",
@@ -1846,16 +1576,6 @@ BRUTEFORCE_TESTS = {
     "pricing": [
         "describe_services"
     ],
-    "private-networks": [
-        "list_networks"
-    ],
-    "profile": [
-        "list_domains",
-        "list_profile_object_type_templates"
-    ],
-    "projects.iot1click": [
-        "list_projects"
-    ],
     "proton": [
         "get_account_settings",
         "get_resources_summary",
@@ -1872,10 +1592,6 @@ BRUTEFORCE_TESTS = {
         "list_journal_s3_exports",
         "list_ledgers"
     ],
-    "query.timestream": [
-        "describe_endpoints",
-        "list_scheduled_queries"
-    ],
     "ram": [
         "get_resource_share_invitations",
         "list_permission_associations",
@@ -1884,6 +1600,39 @@ BRUTEFORCE_TESTS = {
         "list_resource_types"
     ],
     "rds": [
+        "describe_db_engine_versions",
+        "describe_db_instances",
+        "describe_db_parameter_groups",
+        "describe_db_security_groups",
+        "describe_db_snapshots",
+        "describe_db_subnet_groups",
+        "describe_event_categories",
+        "describe_event_subscriptions",
+        "describe_option_groups",
+        "describe_reserved_db_instances",
+        "describe_reserved_db_instances_offerings",
+        "describe_db_engine_versions",
+        "describe_db_instances",
+        "describe_db_parameter_groups",
+        "describe_db_security_groups",
+        "describe_db_snapshots",
+        "describe_db_subnet_groups",
+        "describe_event_categories",
+        "describe_event_subscriptions",
+        "describe_option_groups",
+        "describe_reserved_db_instances",
+        "describe_reserved_db_instances_offerings",
+        "describe_db_engine_versions",
+        "describe_db_instances",
+        "describe_db_parameter_groups",
+        "describe_db_security_groups",
+        "describe_db_snapshots",
+        "describe_db_subnet_groups",
+        "describe_event_categories",
+        "describe_event_subscriptions",
+        "describe_option_groups",
+        "describe_reserved_db_instances",
+        "describe_reserved_db_instances_offerings",
         "describe_db_cluster_endpoints",
         "describe_db_cluster_parameter_groups",
         "describe_db_cluster_snapshots",
@@ -1907,28 +1656,6 @@ BRUTEFORCE_TESTS = {
         "describe_event_subscriptions",
         "describe_global_clusters",
         "describe_pending_maintenance_actions",
-        "describe_db_engine_versions",
-        "describe_db_instances",
-        "describe_db_parameter_groups",
-        "describe_db_security_groups",
-        "describe_db_snapshots",
-        "describe_db_subnet_groups",
-        "describe_event_categories",
-        "describe_event_subscriptions",
-        "describe_option_groups",
-        "describe_reserved_db_instances",
-        "describe_reserved_db_instances_offerings",
-        "describe_db_engine_versions",
-        "describe_db_instances",
-        "describe_db_parameter_groups",
-        "describe_db_security_groups",
-        "describe_db_snapshots",
-        "describe_db_subnet_groups",
-        "describe_event_categories",
-        "describe_event_subscriptions",
-        "describe_option_groups",
-        "describe_reserved_db_instances",
-        "describe_reserved_db_instances_offerings",
         "describe_db_engine_versions",
         "describe_db_instances",
         "describe_db_parameter_groups",
@@ -1955,28 +1682,20 @@ BRUTEFORCE_TESTS = {
         "describe_db_proxies",
         "describe_db_proxy_endpoints",
         "describe_db_security_groups",
+        "describe_db_snapshot_tenant_databases",
         "describe_db_snapshots",
         "describe_db_subnet_groups",
         "describe_event_categories",
         "describe_event_subscriptions",
         "describe_export_tasks",
         "describe_global_clusters",
+        "describe_integrations",
         "describe_option_groups",
         "describe_pending_maintenance_actions",
         "describe_reserved_db_instances",
         "describe_reserved_db_instances_offerings",
         "describe_source_regions",
-        "describe_db_engine_versions",
-        "describe_db_instances",
-        "describe_db_parameter_groups",
-        "describe_db_security_groups",
-        "describe_db_snapshots",
-        "describe_db_subnet_groups",
-        "describe_event_categories",
-        "describe_event_subscriptions",
-        "describe_option_groups",
-        "describe_reserved_db_instances",
-        "describe_reserved_db_instances_offerings"
+        "describe_tenant_databases"
     ],
     "redshift": [
         "describe_account_attributes",
@@ -2017,7 +1736,9 @@ BRUTEFORCE_TESTS = {
         "list_statements"
     ],
     "redshift-serverless": [
+        "get_credentials",
         "get_snapshot",
+        "list_custom_domain_associations",
         "list_endpoint_access",
         "list_namespaces",
         "list_recovery_points",
@@ -2025,9 +1746,6 @@ BRUTEFORCE_TESTS = {
         "list_table_restore_status",
         "list_usage_limits",
         "list_workgroups"
-    ],
-    "refactor-spaces": [
-        "list_environments"
     ],
     "rekognition": [
         "describe_projects",
@@ -2133,10 +1851,6 @@ BRUTEFORCE_TESTS = {
     ],
     "s3": [
         "list_buckets"
-    ],
-    "s3-outposts": [
-        "list_endpoints",
-        "list_outposts_with_s3"
     ],
     "sagemaker": [
         "get_sagemaker_servicecatalog_portfolio_status",
@@ -2281,12 +1995,6 @@ BRUTEFORCE_TESTS = {
         "list_operations",
         "list_services"
     ],
-    "servicequotas": [
-        "get_association_for_service_quota_template",
-        "list_requested_service_quota_change_history",
-        "list_service_quota_increase_requests_in_template",
-        "list_services"
-    ],
     "shield": [
         "describe_attack_statistics",
         "describe_drt_access",
@@ -2314,19 +2022,6 @@ BRUTEFORCE_TESTS = {
         "get_replication_jobs",
         "get_servers",
         "list_apps"
-    ],
-    "sms-voice": [
-        "describe_account_attributes",
-        "describe_account_limits",
-        "describe_configuration_sets",
-        "describe_opt_out_lists",
-        "describe_phone_numbers",
-        "describe_pools",
-        "describe_sender_ids",
-        "describe_spend_limits"
-    ],
-    "sms-voice.pinpoint": [
-        "list_configuration_sets"
     ],
     "snow-device-management": [
         "list_devices",
@@ -2400,14 +2095,6 @@ BRUTEFORCE_TESTS = {
         "list_components",
         "list_databases"
     ],
-    "sso": [
-        "list_instances"
-    ],
-    "states": [
-        "list_activities",
-        "list_executions",
-        "list_state_machines"
-    ],
     "storagegateway": [
         "describe_tape_archives",
         "list_automatic_tape_creation_policies",
@@ -2418,9 +2105,6 @@ BRUTEFORCE_TESTS = {
         "list_tapes",
         "list_volumes"
     ],
-    "streams.dynamodb": [
-        "list_streams"
-    ],
     "sts": [
         "get_caller_identity",
         "get_session_token"
@@ -2430,22 +2114,11 @@ BRUTEFORCE_TESTS = {
         "describe_services",
         "describe_severity_levels"
     ],
-    "supportapp": [
-        "get_account_alias",
-        "list_slack_channel_configurations",
-        "list_slack_workspace_configurations"
-    ],
     "synthetics": [
         "describe_canaries",
         "describe_canaries_last_run",
         "describe_runtime_versions",
         "list_groups"
-    ],
-    "tagging": [
-        "describe_report_creation",
-        "get_compliance_summary",
-        "get_resources",
-        "get_tag_keys"
     ],
     "textract": [
         "list_adapter_versions",
@@ -2482,26 +2155,8 @@ BRUTEFORCE_TESTS = {
         "list_terminologies",
         "list_text_translation_jobs"
     ],
-    "tunneling.iot": [
-        "list_tunnels"
-    ],
     "verifiedpermissions": [
         "list_policy_stores"
-    ],
-    "voice-chime": [
-        "get_global_settings",
-        "get_phone_number_settings",
-        "list_available_voice_connector_regions",
-        "list_phone_number_orders",
-        "list_phone_numbers",
-        "list_sip_media_applications",
-        "list_sip_rules",
-        "list_voice_connector_groups",
-        "list_voice_connectors",
-        "list_voice_profile_domains"
-    ],
-    "voiceid": [
-        "list_domains"
     ],
     "vpc-lattice": [
         "list_service_network_service_associations",
