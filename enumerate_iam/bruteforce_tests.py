@@ -102,16 +102,19 @@ BRUTEFORCE_TESTS = {
         "describe_global_settings",
         "describe_region_settings",
         "get_supported_resource_types",
+        "list_backup_job_summaries",
         "list_backup_jobs",
         "list_backup_plan_templates",
         "list_backup_plans",
         "list_backup_vaults",
+        "list_copy_job_summaries",
         "list_copy_jobs",
         "list_frameworks",
         "list_legal_holds",
         "list_protected_resources",
         "list_report_jobs",
         "list_report_plans",
+        "list_restore_job_summaries",
         "list_restore_jobs"
     ],
     "backup-gateway": [
@@ -322,7 +325,8 @@ BRUTEFORCE_TESTS = {
     ],
     "codestar-connections": [
         "list_connections",
-        "list_hosts"
+        "list_hosts",
+        "list_repository_links"
     ],
     "codestar-notifications": [
         "list_event_types",
@@ -597,10 +601,12 @@ BRUTEFORCE_TESTS = {
         "describe_instance_event_notification_attributes",
         "describe_instance_event_windows",
         "describe_instance_status",
+        "describe_instance_topology",
         "describe_instance_type_offerings",
         "describe_instance_types",
         "describe_instances",
         "describe_internet_gateways",
+        "describe_ipam_byoasn",
         "describe_ipam_pools",
         "describe_ipam_resource_discoveries",
         "describe_ipam_resource_discovery_associations",
@@ -616,6 +622,7 @@ BRUTEFORCE_TESTS = {
         "describe_local_gateway_virtual_interface_groups",
         "describe_local_gateway_virtual_interfaces",
         "describe_local_gateways",
+        "describe_locked_snapshots",
         "describe_managed_prefix_lists",
         "describe_moving_addresses",
         "describe_nat_gateways",
@@ -914,6 +921,7 @@ BRUTEFORCE_TESTS = {
         "get_security_configurations",
         "get_triggers",
         "list_blueprints",
+        "list_column_statistics_task_runs",
         "list_crawlers",
         "list_custom_entity_types",
         "list_data_quality_results",
@@ -1001,7 +1009,8 @@ BRUTEFORCE_TESTS = {
         "list_image_scan_finding_aggregations",
         "list_image_scan_findings",
         "list_images",
-        "list_infrastructure_configurations"
+        "list_infrastructure_configurations",
+        "list_lifecycle_policies"
     ],
     "importexport": [
         "list_jobs"
@@ -1325,10 +1334,6 @@ BRUTEFORCE_TESTS = {
         "describe_data_sources",
         "describe_evaluations",
         "describe_ml_models"
-    ],
-    "macie": [
-        "list_member_accounts",
-        "list_s3_resources"
     ],
     "macie2": [
         "batch_get_custom_data_identifiers",
@@ -1720,6 +1725,7 @@ BRUTEFORCE_TESTS = {
         "describe_hsm_configurations",
         "describe_inbound_integrations",
         "describe_orderable_cluster_options",
+        "describe_redshift_idc_applications",
         "describe_reserved_node_exchange_status",
         "describe_reserved_node_offerings",
         "describe_reserved_nodes",
@@ -1761,6 +1767,7 @@ BRUTEFORCE_TESTS = {
     ],
     "resource-explorer-2": [
         "batch_get_view",
+        "get_account_level_service_configuration",
         "get_default_view",
         "get_index",
         "list_indexes",
@@ -2154,6 +2161,11 @@ BRUTEFORCE_TESTS = {
         "list_parallel_data",
         "list_terminologies",
         "list_text_translation_jobs"
+    ],
+    "trustedadvisor": [
+        "list_checks",
+        "list_organization_recommendations",
+        "list_recommendations"
     ],
     "verifiedpermissions": [
         "list_policy_stores"
