@@ -58,6 +58,7 @@ BRUTEFORCE_TESTS = {
         "list_graphql_apis"
     ],
     "arc-zonal-shift": [
+        "list_autoshifts",
         "list_managed_resources",
         "list_zonal_shifts"
     ],
@@ -98,6 +99,12 @@ BRUTEFORCE_TESTS = {
         "describe_tags",
         "describe_termination_policy_types"
     ],
+    "b2bi": [
+        "list_capabilities",
+        "list_partnerships",
+        "list_profiles",
+        "list_transformers"
+    ],
     "backup": [
         "describe_global_settings",
         "describe_region_settings",
@@ -115,7 +122,8 @@ BRUTEFORCE_TESTS = {
         "list_report_jobs",
         "list_report_plans",
         "list_restore_job_summaries",
-        "list_restore_jobs"
+        "list_restore_jobs",
+        "list_restore_testing_plans"
     ],
     "backup-gateway": [
         "list_gateways",
@@ -129,12 +137,20 @@ BRUTEFORCE_TESTS = {
         "list_jobs",
         "list_scheduling_policies"
     ],
+    "bcm-data-exports": [
+        "list_exports",
+        "list_tables"
+    ],
     "bedrock": [
         "get_model_invocation_logging_configuration",
         "list_custom_models",
         "list_foundation_models",
         "list_model_customization_jobs",
         "list_provisioned_model_throughputs"
+    ],
+    "bedrock-agent": [
+        "list_agents",
+        "list_knowledge_bases"
     ],
     "billingconductor": [
         "list_account_associations",
@@ -326,7 +342,8 @@ BRUTEFORCE_TESTS = {
     ],
     "codestar-connections": [
         "list_connections",
-        "list_hosts"
+        "list_hosts",
+        "list_repository_links"
     ],
     "codestar-notifications": [
         "list_event_types",
@@ -405,6 +422,14 @@ BRUTEFORCE_TESTS = {
         "list_instances",
         "list_phone_numbers_v2",
         "list_traffic_distribution_groups"
+    ],
+    "controltower": [
+        "list_landing_zones"
+    ],
+    "cost-optimization-hub": [
+        "get_preferences",
+        "list_enrollment_statuses",
+        "list_recommendations"
     ],
     "cur": [
         "describe_report_definitions"
@@ -743,6 +768,8 @@ BRUTEFORCE_TESTS = {
         "describe_replication_groups",
         "describe_reserved_cache_nodes",
         "describe_reserved_cache_nodes_offerings",
+        "describe_serverless_cache_snapshots",
+        "describe_serverless_caches",
         "describe_service_updates",
         "describe_snapshots",
         "describe_update_actions",
@@ -866,12 +893,16 @@ BRUTEFORCE_TESTS = {
         "get_variables",
         "list_event_predictions"
     ],
+    "freetier": [
+        "get_free_tier_usage"
+    ],
     "fsx": [
         "describe_backups",
         "describe_data_repository_associations",
         "describe_data_repository_tasks",
         "describe_file_caches",
         "describe_file_systems",
+        "describe_shared_vpc_configuration",
         "describe_snapshots",
         "describe_storage_virtual_machines",
         "describe_volumes"
@@ -1221,6 +1252,7 @@ BRUTEFORCE_TESTS = {
         "list_keys"
     ],
     "lakeformation": [
+        "describe_lake_formation_identity_center_configuration",
         "get_data_lake_settings",
         "list_data_cells_filter",
         "list_lake_formation_opt_ins",
@@ -1304,7 +1336,9 @@ BRUTEFORCE_TESTS = {
         "describe_queries",
         "describe_query_definitions",
         "describe_resource_policies",
-        "get_log_group_fields"
+        "get_log_group_fields",
+        "list_anomalies",
+        "list_log_anomaly_detectors"
     ],
     "lookoutequipment": [
         "list_data_ingestion_jobs",
@@ -1563,6 +1597,7 @@ BRUTEFORCE_TESTS = {
         "list_solutions"
     ],
     "personalize-runtime": [
+        "get_action_recommendations",
         "get_recommendations"
     ],
     "pinpoint": [
@@ -1592,6 +1627,9 @@ BRUTEFORCE_TESTS = {
         "list_service_instances",
         "list_service_templates",
         "list_services"
+    ],
+    "qbusiness": [
+        "list_applications"
     ],
     "qldb": [
         "list_journal_s3_exports",
@@ -1748,6 +1786,8 @@ BRUTEFORCE_TESTS = {
         "list_endpoint_access",
         "list_namespaces",
         "list_recovery_points",
+        "list_scheduled_actions",
+        "list_snapshot_copy_configurations",
         "list_snapshots",
         "list_table_restore_status",
         "list_usage_limits",
@@ -1758,6 +1798,9 @@ BRUTEFORCE_TESTS = {
         "list_collections",
         "list_media_analysis_jobs",
         "list_stream_processors"
+    ],
+    "repostspace": [
+        "list_spaces"
     ],
     "resiliencehub": [
         "list_app_assessments",
@@ -1857,7 +1900,8 @@ BRUTEFORCE_TESTS = {
         "list_app_monitors"
     ],
     "s3": [
-        "list_buckets"
+        "list_buckets",
+        "list_directory_buckets"
     ],
     "sagemaker": [
         "get_sagemaker_servicecatalog_portfolio_status",
@@ -1868,6 +1912,7 @@ BRUTEFORCE_TESTS = {
         "list_artifacts",
         "list_associations",
         "list_auto_ml_jobs",
+        "list_clusters",
         "list_code_repositories",
         "list_compilation_jobs",
         "list_contexts",
@@ -1886,6 +1931,7 @@ BRUTEFORCE_TESTS = {
         "list_human_task_uis",
         "list_hyper_parameter_tuning_jobs",
         "list_images",
+        "list_inference_components",
         "list_inference_experiments",
         "list_inference_recommendations_jobs",
         "list_labeling_jobs",
@@ -1942,6 +1988,7 @@ BRUTEFORCE_TESTS = {
         "list_domains"
     ],
     "secretsmanager": [
+        "batch_get_secret_value",
         "get_random_password",
         "list_secrets"
     ],
@@ -1958,6 +2005,8 @@ BRUTEFORCE_TESTS = {
         "get_invitations_count",
         "get_master_account",
         "list_automation_rules",
+        "list_configuration_policies",
+        "list_configuration_policy_associations",
         "list_enabled_products_for_import",
         "list_finding_aggregators",
         "list_invitations",
@@ -2142,6 +2191,7 @@ BRUTEFORCE_TESTS = {
         "list_call_analytics_categories",
         "list_call_analytics_jobs",
         "list_language_models",
+        "list_medical_scribe_jobs",
         "list_medical_transcription_jobs",
         "list_medical_vocabularies",
         "list_transcription_jobs",
@@ -2225,6 +2275,8 @@ BRUTEFORCE_TESTS = {
         "list_workloads"
     ],
     "wisdom": [
+        "list_assistants",
+        "list_knowledge_bases",
         "list_assistants",
         "list_knowledge_bases"
     ],
