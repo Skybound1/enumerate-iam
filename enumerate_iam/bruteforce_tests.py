@@ -14,8 +14,6 @@ BRUTEFORCE_TESTS = {
         "list_s3_buckets"
     ],
     "apigateway": [
-        "get_domain_names",
-        "get_vpc_links",
         "get_account",
         "get_api_keys",
         "get_client_certificates",
@@ -23,6 +21,8 @@ BRUTEFORCE_TESTS = {
         "get_rest_apis",
         "get_sdk_types",
         "get_usage_plans",
+        "get_vpc_links",
+        "get_domain_names",
         "get_vpc_links"
     ],
     "appconfig": [
@@ -196,10 +196,10 @@ BRUTEFORCE_TESTS = {
     "clouddirectory": [
         "list_development_schema_arns",
         "list_directories",
+        "list_managed_schema_arns",
         "list_published_schema_arns",
         "list_development_schema_arns",
         "list_directories",
-        "list_managed_schema_arns",
         "list_published_schema_arns"
     ],
     "cloudformation": [
@@ -226,8 +226,6 @@ BRUTEFORCE_TESTS = {
         "list_streaming_distributions",
         "list_cloud_front_origin_access_identities",
         "list_distributions",
-        "list_field_level_encryption_configs",
-        "list_field_level_encryption_profiles",
         "list_streaming_distributions",
         "list_cloud_front_origin_access_identities",
         "list_distributions",
@@ -241,6 +239,8 @@ BRUTEFORCE_TESTS = {
         "list_streaming_distributions",
         "list_cloud_front_origin_access_identities",
         "list_distributions",
+        "list_field_level_encryption_configs",
+        "list_field_level_encryption_profiles",
         "list_streaming_distributions",
         "list_cloud_front_origin_access_identities",
         "list_distributions",
@@ -276,8 +276,8 @@ BRUTEFORCE_TESTS = {
     ],
     "cloudsearch": [
         "describe_domains",
-        "describe_domains",
-        "list_domain_names"
+        "list_domain_names",
+        "describe_domains"
     ],
     "cloudtrail": [
         "describe_query",
@@ -803,9 +803,6 @@ BRUTEFORCE_TESTS = {
         "list_schema_mappings"
     ],
     "es": [
-        "describe_packages",
-        "list_domain_names",
-        "list_vpc_endpoints",
         "describe_inbound_cross_cluster_search_connections",
         "describe_outbound_cross_cluster_search_connections",
         "describe_packages",
@@ -814,6 +811,9 @@ BRUTEFORCE_TESTS = {
         "get_compatible_elasticsearch_versions",
         "list_domain_names",
         "list_elasticsearch_versions",
+        "list_vpc_endpoints",
+        "describe_packages",
+        "list_domain_names",
         "list_vpc_endpoints"
     ],
     "events": [
@@ -971,8 +971,6 @@ BRUTEFORCE_TESTS = {
     ],
     "greengrass": [
         "get_service_role_for_account",
-        "list_deployments",
-        "get_service_role_for_account",
         "list_bulk_deployments",
         "list_connector_definitions",
         "list_core_definitions",
@@ -981,7 +979,9 @@ BRUTEFORCE_TESTS = {
         "list_groups",
         "list_logger_definitions",
         "list_resource_definitions",
-        "list_subscription_definitions"
+        "list_subscription_definitions",
+        "get_service_role_for_account",
+        "list_deployments"
     ],
     "groundstation": [
         "list_configs",
@@ -1038,7 +1038,9 @@ BRUTEFORCE_TESTS = {
         "list_image_scan_findings",
         "list_images",
         "list_infrastructure_configurations",
-        "list_lifecycle_policies"
+        "list_lifecycle_policies",
+        "list_waiting_workflow_steps",
+        "list_workflows"
     ],
     "importexport": [
         "list_jobs"
@@ -1090,6 +1092,7 @@ BRUTEFORCE_TESTS = {
         "list_authorizers",
         "list_billing_groups",
         "list_ca_certificates",
+        "list_certificate_providers",
         "list_certificates",
         "list_custom_metrics",
         "list_detect_mitigation_actions_executions",
@@ -1259,12 +1262,12 @@ BRUTEFORCE_TESTS = {
         "list_transactions"
     ],
     "lambda": [
+        "list_functions",
         "get_account_settings",
         "list_code_signing_configs",
         "list_event_source_mappings",
         "list_functions",
-        "list_layers",
-        "list_functions"
+        "list_layers"
     ],
     "license-manager": [
         "get_service_settings",
@@ -1485,6 +1488,11 @@ BRUTEFORCE_TESTS = {
         "list_brokers",
         "list_configurations"
     ],
+    "neptune-graph": [
+        "list_graph_snapshots",
+        "list_graphs",
+        "list_import_tasks"
+    ],
     "network-firewall": [
         "describe_firewall",
         "describe_firewall_policy",
@@ -1640,6 +1648,28 @@ BRUTEFORCE_TESTS = {
         "list_resource_types"
     ],
     "rds": [
+        "describe_certificates",
+        "describe_db_cluster_parameter_groups",
+        "describe_db_cluster_snapshots",
+        "describe_db_clusters",
+        "describe_db_engine_versions",
+        "describe_db_instances",
+        "describe_db_subnet_groups",
+        "describe_event_categories",
+        "describe_event_subscriptions",
+        "describe_global_clusters",
+        "describe_pending_maintenance_actions",
+        "describe_db_engine_versions",
+        "describe_db_instances",
+        "describe_db_parameter_groups",
+        "describe_db_security_groups",
+        "describe_db_snapshots",
+        "describe_db_subnet_groups",
+        "describe_event_categories",
+        "describe_event_subscriptions",
+        "describe_option_groups",
+        "describe_reserved_db_instances",
+        "describe_reserved_db_instances_offerings",
         "describe_db_engine_versions",
         "describe_db_instances",
         "describe_db_parameter_groups",
@@ -1713,29 +1743,7 @@ BRUTEFORCE_TESTS = {
         "describe_event_categories",
         "describe_event_subscriptions",
         "describe_global_clusters",
-        "describe_pending_maintenance_actions",
-        "describe_certificates",
-        "describe_db_cluster_parameter_groups",
-        "describe_db_cluster_snapshots",
-        "describe_db_clusters",
-        "describe_db_engine_versions",
-        "describe_db_instances",
-        "describe_db_subnet_groups",
-        "describe_event_categories",
-        "describe_event_subscriptions",
-        "describe_global_clusters",
-        "describe_pending_maintenance_actions",
-        "describe_db_engine_versions",
-        "describe_db_instances",
-        "describe_db_parameter_groups",
-        "describe_db_security_groups",
-        "describe_db_snapshots",
-        "describe_db_subnet_groups",
-        "describe_event_categories",
-        "describe_event_subscriptions",
-        "describe_option_groups",
-        "describe_reserved_db_instances",
-        "describe_reserved_db_instances_offerings"
+        "describe_pending_maintenance_actions"
     ],
     "redshift": [
         "describe_account_attributes",
