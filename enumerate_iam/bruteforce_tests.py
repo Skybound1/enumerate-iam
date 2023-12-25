@@ -748,6 +748,7 @@ BRUTEFORCE_TESTS = {
     ],
     "eks": [
         "describe_addon_versions",
+        "list_access_policies",
         "list_clusters",
         "list_eks_anywhere_subscriptions"
     ],
@@ -992,6 +993,7 @@ BRUTEFORCE_TESTS = {
     ],
     "guardduty": [
         "get_invitations_count",
+        "get_organization_statistics",
         "list_detectors",
         "list_invitations",
         "list_organization_admin_accounts"
@@ -1513,6 +1515,9 @@ BRUTEFORCE_TESTS = {
         "list_organization_service_access_status",
         "list_peerings"
     ],
+    "networkmonitor": [
+        "list_monitors"
+    ],
     "nimble": [
         "list_eulas",
         "list_studios"
@@ -1706,6 +1711,7 @@ BRUTEFORCE_TESTS = {
         "describe_db_parameter_groups",
         "describe_db_proxies",
         "describe_db_proxy_endpoints",
+        "describe_db_recommendations",
         "describe_db_security_groups",
         "describe_db_snapshot_tenant_databases",
         "describe_db_snapshots",
