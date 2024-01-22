@@ -297,6 +297,7 @@ BRUTEFORCE_TESTS = {
         "list_build_batches_for_project",
         "list_builds",
         "list_curated_environment_images",
+        "list_fleets",
         "list_projects",
         "list_report_groups",
         "list_reports",
@@ -1489,11 +1490,6 @@ BRUTEFORCE_TESTS = {
         "describe_broker_instance_options",
         "list_brokers",
         "list_configurations"
-    ],
-    "neptune-graph": [
-        "list_graph_snapshots",
-        "list_graphs",
-        "list_import_tasks"
     ],
     "network-firewall": [
         "describe_firewall",
