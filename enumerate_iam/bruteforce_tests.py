@@ -171,6 +171,16 @@ BRUTEFORCE_TESTS = {
         "list_cost_category_definitions",
         "list_savings_plans_purchase_recommendation_generation"
     ],
+    "chatbot": [
+        "describe_chime_webhook_configurations",
+        "describe_slack_channel_configurations",
+        "describe_slack_user_identities",
+        "describe_slack_workspaces",
+        "get_account_preferences",
+        "list_microsoft_teams_channel_configurations",
+        "list_microsoft_teams_configured_teams",
+        "list_microsoft_teams_user_identities"
+    ],
     "chime": [
         "get_global_settings",
         "get_messaging_session_endpoint",
