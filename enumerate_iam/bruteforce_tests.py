@@ -664,6 +664,7 @@ BRUTEFORCE_TESTS = {
         "describe_local_gateway_virtual_interfaces",
         "describe_local_gateways",
         "describe_locked_snapshots",
+        "describe_mac_hosts",
         "describe_managed_prefix_lists",
         "describe_moving_addresses",
         "describe_nat_gateways",
