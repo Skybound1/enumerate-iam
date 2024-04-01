@@ -167,6 +167,7 @@ BRUTEFORCE_TESTS = {
     "ce": [
         "get_anomaly_monitors",
         "get_anomaly_subscriptions",
+        "list_cost_allocation_tag_backfill_history",
         "list_cost_allocation_tags",
         "list_cost_category_definitions",
         "list_savings_plans_purchase_recommendation_generation"
@@ -330,6 +331,11 @@ BRUTEFORCE_TESTS = {
         "get_branch",
         "list_approval_rule_templates",
         "list_repositories"
+    ],
+    "codeconnections": [
+        "list_connections",
+        "list_hosts",
+        "list_repository_links"
     ],
     "codedeploy": [
         "list_applications",
@@ -735,6 +741,7 @@ BRUTEFORCE_TESTS = {
         "get_ebs_default_kms_key_id",
         "get_ebs_encryption_by_default",
         "get_image_block_public_access_state",
+        "get_instance_metadata_defaults",
         "get_serial_console_access_status",
         "get_snapshot_block_public_access_state",
         "get_vpn_connection_device_types",
@@ -1200,6 +1207,8 @@ BRUTEFORCE_TESTS = {
     "iotwireless": [
         "get_event_configuration_by_resource_types",
         "get_log_levels_by_resource_types",
+        "get_metric_configuration",
+        "get_metrics",
         "get_position_estimate",
         "get_service_endpoint",
         "list_destinations",
