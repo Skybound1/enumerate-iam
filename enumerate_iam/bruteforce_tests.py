@@ -443,6 +443,11 @@ BRUTEFORCE_TESTS = {
         "list_phone_numbers_v2",
         "list_traffic_distribution_groups"
     ],
+    "controlcatalog": [
+        "list_common_controls",
+        "list_domains",
+        "list_objectives"
+    ],
     "controltower": [
         "list_baselines",
         "list_enabled_baselines",
@@ -1464,12 +1469,17 @@ BRUTEFORCE_TESTS = {
     "medialive": [
         "describe_account_configuration",
         "list_channels",
+        "list_cloud_watch_alarm_template_groups",
+        "list_cloud_watch_alarm_templates",
+        "list_event_bridge_rule_template_groups",
+        "list_event_bridge_rule_templates",
         "list_input_devices",
         "list_input_security_groups",
         "list_inputs",
         "list_multiplexes",
         "list_offerings",
-        "list_reservations"
+        "list_reservations",
+        "list_signal_maps"
     ],
     "mediapackage": [
         "list_channels",
