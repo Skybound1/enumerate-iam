@@ -148,7 +148,9 @@ BRUTEFORCE_TESTS = {
     "bedrock": [
         "get_model_invocation_logging_configuration",
         "list_custom_models",
+        "list_evaluation_jobs",
         "list_foundation_models",
+        "list_guardrails",
         "list_model_customization_jobs",
         "list_provisioned_model_throughputs"
     ],
@@ -830,6 +832,7 @@ BRUTEFORCE_TESTS = {
     ],
     "emr-containers": [
         "list_job_templates",
+        "list_security_configurations",
         "list_virtual_clusters"
     ],
     "emr-serverless": [
@@ -959,6 +962,7 @@ BRUTEFORCE_TESTS = {
         "describe_vpc_peering_connections",
         "list_aliases",
         "list_builds",
+        "list_container_group_definitions",
         "list_fleets",
         "list_game_server_groups",
         "list_locations",
@@ -1941,6 +1945,10 @@ BRUTEFORCE_TESTS = {
         "list_operations",
         "list_prices"
     ],
+    "route53profiles": [
+        "list_profile_associations",
+        "list_profiles"
+    ],
     "route53resolver": [
         "list_firewall_configs",
         "list_firewall_domain_lists",
@@ -2170,6 +2178,7 @@ BRUTEFORCE_TESTS = {
         "describe_automation_executions",
         "describe_available_patches",
         "describe_instance_information",
+        "describe_instance_properties",
         "describe_inventory_deletions",
         "describe_maintenance_window_schedule",
         "describe_maintenance_windows",
