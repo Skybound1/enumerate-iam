@@ -1869,6 +1869,7 @@ BRUTEFORCE_TESTS = {
     "resiliencehub": [
         "list_app_assessments",
         "list_apps",
+        "list_recommendation_templates",
         "list_resiliency_policies",
         "list_suggested_resiliency_policies"
     ],
