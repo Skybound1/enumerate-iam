@@ -452,7 +452,9 @@ BRUTEFORCE_TESTS = {
     ],
     "controltower": [
         "list_baselines",
+        "list_control_operations",
         "list_enabled_baselines",
+        "list_enabled_controls",
         "list_landing_zones"
     ],
     "cost-optimization-hub": [
