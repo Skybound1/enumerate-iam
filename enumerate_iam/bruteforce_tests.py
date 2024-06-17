@@ -41,6 +41,9 @@ BRUTEFORCE_TESTS = {
         "list_connectors",
         "list_flows"
     ],
+    "application-signals": [
+        "list_service_level_objectives"
+    ],
     "appmesh": [
         "list_meshes",
         "list_meshes"
@@ -56,6 +59,12 @@ BRUTEFORCE_TESTS = {
     "appsync": [
         "list_domain_names",
         "list_graphql_apis"
+    ],
+    "apptest": [
+        "list_test_cases",
+        "list_test_configurations",
+        "list_test_runs",
+        "list_test_suites"
     ],
     "arc-zonal-shift": [
         "list_autoshifts",
@@ -719,6 +728,7 @@ BRUTEFORCE_TESTS = {
         "describe_store_image_tasks",
         "describe_subnets",
         "describe_tags",
+        "describe_traffic_mirror_filter_rules",
         "describe_traffic_mirror_filters",
         "describe_traffic_mirror_sessions",
         "describe_traffic_mirror_targets",
@@ -1041,6 +1051,7 @@ BRUTEFORCE_TESTS = {
         "get_organization_statistics",
         "list_detectors",
         "list_invitations",
+        "list_malware_protection_plans",
         "list_organization_admin_accounts"
     ],
     "health": [
@@ -1439,6 +1450,7 @@ BRUTEFORCE_TESTS = {
         "get_usage_statistics",
         "get_usage_totals",
         "list_allow_lists",
+        "list_automated_discovery_accounts",
         "list_classification_jobs",
         "list_classification_scopes",
         "list_custom_data_identifiers",
@@ -1640,6 +1652,9 @@ BRUTEFORCE_TESTS = {
     "pca-connector-ad": [
         "list_connectors",
         "list_directory_registrations"
+    ],
+    "pca-connector-scep": [
+        "list_connectors"
     ],
     "personalize": [
         "list_batch_inference_jobs",
