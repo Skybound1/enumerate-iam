@@ -259,6 +259,11 @@ BRUTEFORCE_TESTS = {
         "list_streaming_distributions",
         "list_cloud_front_origin_access_identities",
         "list_distributions",
+        "list_field_level_encryption_configs",
+        "list_field_level_encryption_profiles",
+        "list_streaming_distributions",
+        "list_cloud_front_origin_access_identities",
+        "list_distributions",
         "list_streaming_distributions",
         "list_cloud_front_origin_access_identities",
         "list_distributions",
@@ -283,11 +288,6 @@ BRUTEFORCE_TESTS = {
         "list_streaming_distributions",
         "list_cloud_front_origin_access_identities",
         "list_distributions",
-        "list_field_level_encryption_configs",
-        "list_field_level_encryption_profiles",
-        "list_streaming_distributions",
-        "list_cloud_front_origin_access_identities",
-        "list_distributions",
         "list_streaming_distributions"
     ],
     "cloudhsm": [
@@ -304,8 +304,8 @@ BRUTEFORCE_TESTS = {
     ],
     "cloudsearch": [
         "describe_domains",
-        "describe_domains",
-        "list_domain_names"
+        "list_domain_names",
+        "describe_domains"
     ],
     "cloudtrail": [
         "describe_query",
@@ -419,6 +419,7 @@ BRUTEFORCE_TESTS = {
         "get_enrollment_statuses_for_organization",
         "get_lambda_function_recommendations",
         "get_license_recommendations",
+        "get_rds_database_recommendations",
         "get_recommendation_summaries"
     ],
     "config": [
@@ -622,7 +623,6 @@ BRUTEFORCE_TESTS = {
         "list_log_subscriptions"
     ],
     "dynamodb": [
-        "list_tables",
         "describe_endpoints",
         "describe_limits",
         "list_backups",
@@ -630,6 +630,7 @@ BRUTEFORCE_TESTS = {
         "list_exports",
         "list_global_tables",
         "list_imports",
+        "list_tables",
         "list_tables"
     ],
     "ec2": [
@@ -858,6 +859,9 @@ BRUTEFORCE_TESTS = {
         "list_schema_mappings"
     ],
     "es": [
+        "describe_packages",
+        "list_domain_names",
+        "list_vpc_endpoints",
         "describe_inbound_cross_cluster_search_connections",
         "describe_outbound_cross_cluster_search_connections",
         "describe_packages",
@@ -866,9 +870,6 @@ BRUTEFORCE_TESTS = {
         "get_compatible_elasticsearch_versions",
         "list_domain_names",
         "list_elasticsearch_versions",
-        "list_vpc_endpoints",
-        "describe_packages",
-        "list_domain_names",
         "list_vpc_endpoints"
     ],
     "events": [
@@ -876,7 +877,6 @@ BRUTEFORCE_TESTS = {
         "list_api_destinations",
         "list_archives",
         "list_connections",
-        "list_endpoints",
         "list_event_buses",
         "list_replays",
         "list_rules",
@@ -884,6 +884,7 @@ BRUTEFORCE_TESTS = {
         "list_api_destinations",
         "list_archives",
         "list_connections",
+        "list_endpoints",
         "list_event_buses",
         "list_replays",
         "list_rules"
@@ -1019,6 +1020,7 @@ BRUTEFORCE_TESTS = {
         "list_schemas",
         "list_sessions",
         "list_triggers",
+        "list_usage_profiles",
         "list_workflows"
     ],
     "grafana": [
@@ -1026,6 +1028,8 @@ BRUTEFORCE_TESTS = {
         "list_workspaces"
     ],
     "greengrass": [
+        "get_service_role_for_account",
+        "list_deployments",
         "get_service_role_for_account",
         "list_bulk_deployments",
         "list_connector_definitions",
@@ -1035,9 +1039,7 @@ BRUTEFORCE_TESTS = {
         "list_groups",
         "list_logger_definitions",
         "list_resource_definitions",
-        "list_subscription_definitions",
-        "get_service_role_for_account",
-        "list_deployments"
+        "list_subscription_definitions"
     ],
     "groundstation": [
         "list_configs",
@@ -1722,23 +1724,13 @@ BRUTEFORCE_TESTS = {
         "list_resource_types"
     ],
     "rds": [
-        "describe_db_engine_versions",
-        "describe_db_instances",
-        "describe_db_parameter_groups",
-        "describe_db_security_groups",
-        "describe_db_snapshots",
-        "describe_db_subnet_groups",
-        "describe_event_categories",
-        "describe_event_subscriptions",
-        "describe_option_groups",
-        "describe_reserved_db_instances",
-        "describe_reserved_db_instances_offerings",
-        "describe_certificates",
+        "describe_db_cluster_endpoints",
         "describe_db_cluster_parameter_groups",
         "describe_db_cluster_snapshots",
         "describe_db_clusters",
         "describe_db_engine_versions",
         "describe_db_instances",
+        "describe_db_parameter_groups",
         "describe_db_subnet_groups",
         "describe_event_categories",
         "describe_event_subscriptions",
@@ -1786,6 +1778,17 @@ BRUTEFORCE_TESTS = {
         "describe_option_groups",
         "describe_reserved_db_instances",
         "describe_reserved_db_instances_offerings",
+        "describe_certificates",
+        "describe_db_cluster_parameter_groups",
+        "describe_db_cluster_snapshots",
+        "describe_db_clusters",
+        "describe_db_engine_versions",
+        "describe_db_instances",
+        "describe_db_subnet_groups",
+        "describe_event_categories",
+        "describe_event_subscriptions",
+        "describe_global_clusters",
+        "describe_pending_maintenance_actions",
         "describe_db_engine_versions",
         "describe_db_instances",
         "describe_db_parameter_groups",
@@ -1797,18 +1800,17 @@ BRUTEFORCE_TESTS = {
         "describe_option_groups",
         "describe_reserved_db_instances",
         "describe_reserved_db_instances_offerings",
-        "describe_db_cluster_endpoints",
-        "describe_db_cluster_parameter_groups",
-        "describe_db_cluster_snapshots",
-        "describe_db_clusters",
         "describe_db_engine_versions",
         "describe_db_instances",
         "describe_db_parameter_groups",
+        "describe_db_security_groups",
+        "describe_db_snapshots",
         "describe_db_subnet_groups",
         "describe_event_categories",
         "describe_event_subscriptions",
-        "describe_global_clusters",
-        "describe_pending_maintenance_actions",
+        "describe_option_groups",
+        "describe_reserved_db_instances",
+        "describe_reserved_db_instances_offerings",
         "describe_db_engine_versions",
         "describe_db_instances",
         "describe_db_parameter_groups",
@@ -2023,6 +2025,7 @@ BRUTEFORCE_TESTS = {
         "list_inference_recommendations_jobs",
         "list_labeling_jobs",
         "list_lineage_groups",
+        "list_mlflow_tracking_servers",
         "list_model_bias_job_definitions",
         "list_model_cards",
         "list_model_explainability_job_definitions",
