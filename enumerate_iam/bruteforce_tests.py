@@ -300,7 +300,8 @@ BRUTEFORCE_TESTS = {
     ],
     "cloudhsmv2": [
         "describe_backups",
-        "describe_clusters"
+        "describe_clusters",
+        "get_resource_policy"
     ],
     "cloudsearch": [
         "describe_domains",
@@ -465,6 +466,7 @@ BRUTEFORCE_TESTS = {
         "list_control_operations",
         "list_enabled_baselines",
         "list_enabled_controls",
+        "list_landing_zone_operations",
         "list_landing_zones"
     ],
     "cost-optimization-hub": [
@@ -2397,6 +2399,7 @@ BRUTEFORCE_TESTS = {
         "describe_workspace_images",
         "describe_workspaces",
         "describe_workspaces_connection_status",
+        "describe_workspaces_pools",
         "get_account_link",
         "list_account_links"
     ],
