@@ -161,8 +161,11 @@ BRUTEFORCE_TESTS = {
         "list_evaluation_jobs",
         "list_foundation_models",
         "list_guardrails",
+        "list_imported_models",
         "list_model_copy_jobs",
         "list_model_customization_jobs",
+        "list_model_import_jobs",
+        "list_model_invocation_jobs",
         "list_provisioned_model_throughputs"
     ],
     "bedrock-agent": [
@@ -372,10 +375,6 @@ BRUTEFORCE_TESTS = {
         "list_pipelines",
         "list_rule_types",
         "list_webhooks"
-    ],
-    "codestar": [
-        "list_projects",
-        "list_user_profiles"
     ],
     "codestar-connections": [
         "list_connections",
