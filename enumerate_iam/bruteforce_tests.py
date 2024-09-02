@@ -26,6 +26,7 @@ BRUTEFORCE_TESTS = {
         "get_vpc_links"
     ],
     "appconfig": [
+        "get_account_settings",
         "list_applications",
         "list_deployment_strategies",
         "list_extension_associations",
@@ -162,6 +163,7 @@ BRUTEFORCE_TESTS = {
         "list_foundation_models",
         "list_guardrails",
         "list_imported_models",
+        "list_inference_profiles",
         "list_model_copy_jobs",
         "list_model_customization_jobs",
         "list_model_import_jobs",
@@ -1665,6 +1667,9 @@ BRUTEFORCE_TESTS = {
     ],
     "pca-connector-scep": [
         "list_connectors"
+    ],
+    "pcs": [
+        "list_clusters"
     ],
     "personalize": [
         "list_batch_inference_jobs",
