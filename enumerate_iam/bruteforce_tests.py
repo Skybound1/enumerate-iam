@@ -2402,9 +2402,6 @@ BRUTEFORCE_TESTS = {
         "describe_users",
         "get_resources"
     ],
-    "worklink": [
-        "list_fleets"
-    ],
     "workmail": [
         "list_organizations"
     ],
