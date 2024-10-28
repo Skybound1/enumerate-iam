@@ -1595,10 +1595,6 @@ BRUTEFORCE_TESTS = {
     "networkmonitor": [
         "list_monitors"
     ],
-    "nimble": [
-        "list_eulas",
-        "list_studios"
-    ],
     "oam": [
         "list_links",
         "list_sinks"
