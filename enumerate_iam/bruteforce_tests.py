@@ -492,9 +492,7 @@ BRUTEFORCE_TESTS = {
     ],
     "datasync": [
         "list_agents",
-        "list_discovery_jobs",
         "list_locations",
-        "list_storage_systems",
         "list_task_executions",
         "list_tasks"
     ],
