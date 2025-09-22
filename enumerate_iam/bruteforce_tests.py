@@ -2139,15 +2139,6 @@ BRUTEFORCE_TESTS = {
     "simspaceweaver": [
         "list_simulations"
     ],
-    "sms": [
-        "get_app",
-        "get_app_launch_configuration",
-        "get_app_replication_configuration",
-        "get_connectors",
-        "get_replication_jobs",
-        "get_servers",
-        "list_apps"
-    ],
     "snow-device-management": [
         "list_devices",
         "list_tasks"
