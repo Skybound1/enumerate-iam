@@ -61,12 +61,6 @@ BRUTEFORCE_TESTS = {
         "list_domain_names",
         "list_graphql_apis"
     ],
-    "apptest": [
-        "list_test_cases",
-        "list_test_configurations",
-        "list_test_runs",
-        "list_test_suites"
-    ],
     "arc-zonal-shift": [
         "get_autoshift_observer_notification_status",
         "list_autoshifts",
@@ -1414,15 +1408,6 @@ BRUTEFORCE_TESTS = {
         "list_models",
         "list_retraining_schedulers"
     ],
-    "lookoutmetrics": [
-        "get_sample_data",
-        "list_alerts",
-        "list_anomaly_detectors",
-        "list_metric_sets"
-    ],
-    "lookoutvision": [
-        "list_projects"
-    ],
     "m2": [
         "get_signed_bluinsights_url",
         "list_applications",
@@ -1689,10 +1674,6 @@ BRUTEFORCE_TESTS = {
     "qbusiness": [
         "list_applications"
     ],
-    "qldb": [
-        "list_journal_s3_exports",
-        "list_ledgers"
-    ],
     "ram": [
         "get_resource_share_invitations",
         "list_permission_associations",
@@ -1887,20 +1868,6 @@ BRUTEFORCE_TESTS = {
         "get_group_query",
         "list_group_resources",
         "list_groups"
-    ],
-    "robomaker": [
-        "get_world_template_body",
-        "list_deployment_jobs",
-        "list_fleets",
-        "list_robot_applications",
-        "list_robots",
-        "list_simulation_applications",
-        "list_simulation_job_batches",
-        "list_simulation_jobs",
-        "list_world_export_jobs",
-        "list_world_generation_jobs",
-        "list_world_templates",
-        "list_worlds"
     ],
     "rolesanywhere": [
         "get_crl",
