@@ -828,10 +828,6 @@ BRUTEFORCE_TESTS = {
         "describe_platform_version",
         "list_platform_branches"
     ],
-    "elastictranscoder": [
-        "list_pipelines",
-        "list_presets"
-    ],
     "emr-containers": [
         "list_job_templates",
         "list_security_configurations",
