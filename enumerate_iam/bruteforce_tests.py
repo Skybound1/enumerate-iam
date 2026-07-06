@@ -1172,12 +1172,6 @@ BRUTEFORCE_TESTS = {
         "list_suite_definitions",
         "list_suite_runs"
     ],
-    "iotevents": [
-        "describe_logging_options",
-        "list_alarm_models",
-        "list_detector_models",
-        "list_inputs"
-    ],
     "iotfleetwise": [
         "get_encryption_configuration",
         "get_logging_options",
@@ -1585,15 +1579,6 @@ BRUTEFORCE_TESTS = {
         "list_orders",
         "list_outposts",
         "list_sites"
-    ],
-    "panorama": [
-        "list_application_instances",
-        "list_devices",
-        "list_devices_jobs",
-        "list_node_from_template_jobs",
-        "list_nodes",
-        "list_package_import_jobs",
-        "list_packages"
     ],
     "pca-connector-ad": [
         "list_connectors",
@@ -2087,9 +2072,6 @@ BRUTEFORCE_TESTS = {
         "list_signing_jobs",
         "list_signing_platforms",
         "list_signing_profiles"
-    ],
-    "simspaceweaver": [
-        "list_simulations"
     ],
     "snow-device-management": [
         "list_devices",
